@@ -517,6 +517,7 @@
                         setTimeout(() => {
                             loader.style.display = 'none';
                             gameCard.classList.add('visible');
+                            bgMusic.play().catch(e => console.log("Autoplay blocked, waiting for interaction"));
                         }, 500);
                     }, 500);
                 }
